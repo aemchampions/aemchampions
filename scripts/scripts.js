@@ -1,18 +1,18 @@
 import {
-  sampleRUM,
-  buildBlock,
-  getMetadata,
-  loadHeader,
-  loadFooter,
-  decorateButtons,
-  decorateIcons,
-  decorateSections,
-  decorateBlocks,
-  decorateTemplateAndTheme,
-  waitForLCP,
-  loadBlocks,
-  loadCSS,
-  toClassName,
+    buildBlock,
+    decorateBlocks,
+    decorateButtons,
+    decorateIcons,
+    decorateSections,
+    decorateTemplateAndTheme,
+    getMetadata,
+    loadBlocks,
+    loadCSS,
+    loadFooter,
+    loadHeader,
+    sampleRUM,
+    toClassName,
+    waitForLCP,
 } from './lib-franklin.js';
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
@@ -93,8 +93,8 @@ function buildAutoBlocks(main) {
 }
 
 function patchDemoBlocks(config) {
-  if (window.wknd.demoConfig.blocks && window.wknd.demoConfig.blocks[config.blockName]) {
-    const url = window.wknd.demoConfig.blocks[config.blockName];
+  if (window.aemchamps.demoConfig.blocks && window.aemchamps.demoConfig.blocks[config.blockName]) {
+    const url = window.aemchamps.demoConfig.blocks[config.blockName];
     const splits = new URL(url).pathname.split('/');
     const [, owner, repo, , branch] = splits;
     const path = splits.slice(5).join('/');
@@ -141,8 +141,8 @@ async function loadDemoConfig() {
       }
     }
   }
-  window.wknd = window.wknd || {};
-  window.wknd.demoConfig = demoConfig;
+  window.aemchamps = window.aemchamps || {};
+  window.aemchamps.demoConfig = demoConfig;
 }
 
 /**
@@ -218,8 +218,8 @@ async function loadLazy(doc) {
     loadFooter(doc.querySelector('footer'));
   }
 
-  if (window.wknd.demoConfig.fonts) {
-    const fonts = window.wknd.demoConfig.fonts.split('\n');
+  if (window.aemchamps.demoConfig.fonts) {
+    const fonts = window.aemchamps.demoConfig.fonts.split('\n');
     fonts.forEach(async (font) => {
       const [family, url] = font.split(': ');
       const ff = new FontFace(family, `url('${url}')`);
@@ -229,7 +229,7 @@ async function loadLazy(doc) {
   } else {
     loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   }
-  addFavIcon(`${window.wknd.demoConfig.demoBase || window.hlx.codeBasePath}/favicon.png`);
+  addFavIcon(`${window.aemchamps.demoConfig.demoBase || window.hlx.codeBasePath}/favicon.png`);
   sampleRUM('lazy');
   sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
   sampleRUM.observe(main.querySelectorAll('picture > img'));

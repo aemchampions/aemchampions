@@ -1,11 +1,11 @@
 {
-  "project": "WKND",
+  "project": "AEM Champs",
   "plugins": [
     {
       "id": "library",
       "title": "Library",
       "environments": [ "edit" ],
-      "url": "https://main--wknd--hlxsites.hlx.live/tools/sidekick/library.html",
+      "url": "https://main--aemchamps--ramisk.hlx.page/tools/sidekick/library.html",
       "includePaths": [ "**.docx**" ]
     }
   ]

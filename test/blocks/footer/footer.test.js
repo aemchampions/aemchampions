@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-expressions */
 /* global describe it */
 
-import { readFile } from '@web/test-runner-commands';
 import { expect } from '@esm-bundle/chai';
+import { readFile } from '@web/test-runner-commands';
 
 document.body.innerHTML = await readFile({ path: '../../scripts/dummy.html' });
 
@@ -10,8 +10,8 @@ const { buildBlock, decorateBlock, loadBlock } = await import('../../../scripts/
 
 document.body.innerHTML = await readFile({ path: '../../scripts/body.html' });
 
-window.wknd = window.wknd || {};
-window.wknd.demoConfig = {
+window.aemchamps = window.aemchamps || {};
+window.aemchamps.demoConfig = {
   demoBase: '/test/blocks/footer',
 };
 
