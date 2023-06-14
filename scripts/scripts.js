@@ -1,18 +1,18 @@
 import {
-    buildBlock,
-    decorateBlocks,
-    decorateButtons,
-    decorateIcons,
-    decorateSections,
-    decorateTemplateAndTheme,
-    getMetadata,
-    loadBlocks,
-    loadCSS,
-    loadFooter,
-    loadHeader,
-    sampleRUM,
-    toClassName,
-    waitForLCP,
+  buildBlock,
+  decorateBlocks,
+  decorateButtons,
+  decorateIcons,
+  decorateSections,
+  decorateTemplateAndTheme,
+  getMetadata,
+  loadBlocks,
+  loadCSS,
+  loadFooter,
+  loadHeader,
+  sampleRUM,
+  toClassName,
+  waitForLCP,
 } from './lib-franklin.js';
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
@@ -229,7 +229,7 @@ async function loadLazy(doc) {
   } else {
     loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   }
-  addFavIcon(`${window.aemchamps.demoConfig.demoBase || window.hlx.codeBasePath}/favicon.png`);
+  addFavIcon(`${window.aemchamps.demoConfig.demoBase || window.hlx.codeBasePath}/favicon.ico`);
   sampleRUM('lazy');
   sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
   sampleRUM.observe(main.querySelectorAll('picture > img'));
