@@ -7,6 +7,7 @@ AEM Champions
 - 2023 AEM champions (coming soon!)
 - [2022 AEM champions](https://business.adobe.com/blog/the-latest/introducing-the-very-first-adobe-experience-manager-champion-class)
 - [Inaugural AEM post on Adobe Experience League](https://business.adobe.com/blog/the-latest/introducing-the-very-first-adobe-experience-manager-champion-class)
+- [The launch of the Adobe Experience Manager Champion Program](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/the-launch-of-the-adobe-experience-manager-champion-program/m-p/446437)
 
 
 ## Environments
