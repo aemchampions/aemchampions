@@ -1,5 +1,13 @@
-# Your Project's Title...
-Your project's description...
+# AEM Champions
+
+Adobe Experience Manager (AEM) Champions are our most passionate brand ambassadors and product experts who actively share their knowledge and expertise with the larger AEM developer community. They have demonstrated outstanding leadership, loyalty, and a passion for helping customers succeed.
+
+AEM Champions
+
+- 2023 AEM champions (coming soon!)
+- [2022 AEM champions](https://business.adobe.com/blog/the-latest/introducing-the-very-first-adobe-experience-manager-champion-class)
+- [Inaugural AEM post on Adobe Experience League](https://business.adobe.com/blog/the-latest/introducing-the-very-first-adobe-experience-manager-champion-class)
+
 
 ## Environments
 - Preview: https://main--{repo}--{owner}.hlx.page/
